@@ -17,9 +17,9 @@ learning log and a portfolio.
 
 ## Get in touch
 
-- **GitHub**: _add your profile link_
-- **Email**: _add your email_
-- **LinkedIn**: _add your profile link_
+- **GitHub**: [@golamrasul97](https://github.com/golamrasul97)
+- **Email**: [golamrasul07@outlook.com](mailto:golamrasul07@outlook.com)
+- **LinkedIn**: [in/golamrasul97](https://www.linkedin.com/in/golamrasul97/)
 
 ## Colophon
 
