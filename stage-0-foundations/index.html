@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#stage-0-foundations" class="md-skip">
+        <a href="#stage-0-foundations-talk-to-an-llm-through-code" class="md-skip">
           Skip to content
         </a>
       
@@ -688,10 +688,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-this-stage-covers" class="md-nav__link">
+  <a href="#what-actually-happens-when-you-talk-to-an-llm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What this stage covers
+        What actually happens when you "talk" to an LLM
       
     </span>
   </a>
@@ -699,10 +699,154 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#articles" class="md-nav__link">
+  <a href="#the-concepts-youll-learn-here" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Articles
+        The concepts you'll learn here
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The concepts you&#39;ll learn here">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#messages-and-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Messages and roles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tokens
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Context window
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temperature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Streaming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-engineering-the-real-leverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt engineering (the real leverage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-it-your-first-three-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build it: your first three projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Build it: your first three projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-1-cli-chatbot-do-this-one" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project 1 — CLI Chatbot (do this one)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-2-structured-extractor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project 2 — Structured Extractor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-3-prompt-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project 3 — Prompt Playground
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#youre-done-with-stage-0-when" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        You're done with Stage 0 when…
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's next
       
     </span>
   </a>
@@ -733,22 +877,109 @@
         <span class="md-tag">foundations</span>
       
     
+      
+      
+      
+      
+        <span class="md-tag">llm-basics</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">prompt-engineering</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">stage-0</span>
+      
+    
   </nav>
 
 
 
-<h1 id="stage-0-foundations">Stage 0 – Foundations<a class="headerlink" href="#stage-0-foundations" title="Permanent link">&para;</a></h1>
-<p>The groundwork every AI engineer needs before touching LLM applications.</p>
-<h2 id="what-this-stage-covers">What this stage covers<a class="headerlink" href="#what-this-stage-covers" title="Permanent link">&para;</a></h2>
+<h1 id="stage-0-foundations-talk-to-an-llm-through-code">Stage 0 — Foundations: Talk to an LLM Through Code<a class="headerlink" href="#stage-0-foundations-talk-to-an-llm-through-code" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>Goal:</strong> Send your first message to a language model from your own code, get a response back, and understand exactly what happened in between.</p>
+</blockquote>
+<p>This is where the roadmap stops being theory. By the end of Stage 0 you'll have a working chatbot you built yourself — and, more importantly, a mental model of what an LLM actually <em>is</em> from an engineer's seat: a function you call over the internet that takes text and returns text.</p>
+<h2 id="what-actually-happens-when-you-talk-to-an-llm">What actually happens when you "talk" to an LLM<a class="headerlink" href="#what-actually-happens-when-you-talk-to-an-llm" title="Permanent link">&para;</a></h2>
+<p>Every interaction, no matter how fancy the app, is the same loop underneath:</p>
+<pre class="mermaid"><code>graph LR
+    A["Your code builds&lt;br/&gt;a list of messages"] --&gt; B["Send request&lt;br/&gt;to the API"]
+    B --&gt; C["Model processes&lt;br/&gt;the tokens"]
+    C --&gt; D["Response streams&lt;br/&gt;back as text"]
+    D --&gt; E["Your code displays&lt;br/&gt;or uses it"]
+    E -.-&gt;|"add reply, repeat"| A</code></pre>
+<p>There's no magic. You assemble some text, send it, and get text back. Everything you build later — RAG, agents, all of it — is a more sophisticated version of this exact loop.</p>
+<h2 id="the-concepts-youll-learn-here">The concepts you'll learn here<a class="headerlink" href="#the-concepts-youll-learn-here" title="Permanent link">&para;</a></h2>
+<h3 id="messages-and-roles">Messages and roles<a class="headerlink" href="#messages-and-roles" title="Permanent link">&para;</a></h3>
+<p>An LLM conversation isn't one blob of text. It's a <strong>list of messages</strong>, each with a role:</p>
 <ul>
-<li>Python for AI: data structures, typing, async, packaging.</li>
-<li>Machine learning basics: training vs. inference, loss, overfitting.</li>
-<li>How LLMs work: tokens, embeddings, attention, sampling.</li>
-<li>Prompting fundamentals and context windows.</li>
+<li><strong>System</strong> — the instructions that set the model's behavior ("You are a helpful tutor"). The user usually doesn't see this.</li>
+<li><strong>User</strong> — what the person types.</li>
+<li><strong>Assistant</strong> — what the model replied. You send past replies back so the model "remembers" the conversation.</li>
 </ul>
-<h2 id="articles">Articles<a class="headerlink" href="#articles" title="Permanent link">&para;</a></h2>
-<p><em>Coming soon.</em> This is a placeholder — add Markdown files in
-<code>docs/stage-0-foundations/</code> and link them here.</p>
+<p>The model has no memory of its own. <strong>You</strong> rebuild the whole conversation and send it every single time. That realization is the foundation of everything.</p>
+<h3 id="tokens">Tokens<a class="headerlink" href="#tokens" title="Permanent link">&para;</a></h3>
+<p>Models don't read words — they read <strong>tokens</strong>, chunks of text roughly ¾ of a word. "Engineering" might be two tokens. Why you care:</p>
+<ul>
+<li><strong>You're billed per token</strong> — input <em>and</em> output.</li>
+<li>Tokens are the unit behind every limit and every cost. Watch them from day one.</li>
+</ul>
+<h3 id="context-window">Context window<a class="headerlink" href="#context-window" title="Permanent link">&para;</a></h3>
+<p>The <strong>context window</strong> is the maximum number of tokens the model can consider at once — its short-term memory. Exceed it and the earliest messages fall off. Long conversations, big documents, and cost all run into this ceiling. Managing it is a real part of the job.</p>
+<h3 id="temperature">Temperature<a class="headerlink" href="#temperature" title="Permanent link">&para;</a></h3>
+<p><strong>Temperature</strong> controls randomness. Low (near 0) = focused and repeatable; higher = more creative and varied. Same prompt, different temperature, different answer. Use low for extraction and code, higher for brainstorming.</p>
+<h3 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h3>
+<p>Instead of waiting for the full reply, <strong>streaming</strong> returns tokens as they're generated — the "typing" effect you see in chat apps. It makes your app feel fast and is worth wiring in early.</p>
+<h3 id="prompt-engineering-the-real-leverage">Prompt engineering (the real leverage)<a class="headerlink" href="#prompt-engineering-the-real-leverage" title="Permanent link">&para;</a></h3>
+<p>How you ask changes what you get. The core moves:</p>
+<ul>
+<li><strong>Be specific.</strong> Vague prompt, vague answer.</li>
+<li><strong>Zero-shot vs few-shot.</strong> Give examples when you want a specific format or style.</li>
+<li><strong>Role prompting.</strong> "You are an expert Python reviewer…" shapes the output.</li>
+<li><strong>Ask for structure.</strong> Tell it to reply in JSON when you need machine-readable output.</li>
+<li><strong>Chain-of-thought.</strong> "Think step by step" improves reasoning on harder tasks.</li>
+</ul>
+<h2 id="build-it-your-first-three-projects">Build it: your first three projects<a class="headerlink" href="#build-it-your-first-three-projects" title="Permanent link">&para;</a></h2>
+<p>Learning sticks when you ship. Do at least the first one.</p>
+<h3 id="project-1-cli-chatbot-do-this-one">Project 1 — CLI Chatbot <em>(do this one)</em><a class="headerlink" href="#project-1-cli-chatbot-do-this-one" title="Permanent link">&para;</a></h3>
+<p>A terminal chatbot that holds a conversation, remembers context, and streams replies.</p>
+<p><strong>Hand this to Claude Code:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Build a command-line chatbot in Python that talks to an LLM API.
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Requirements:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>- A loop that reads my input in the terminal and prints the model&#39;s reply.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>- Maintain conversation history so the model remembers earlier turns
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  (send the full message list each request).
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>- Include a configurable system prompt at the top of the file.
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>- Stream the response so it prints token-by-token like a typing effect.
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>- Type &quot;exit&quot; to quit; type &quot;reset&quot; to clear the conversation history.
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>- Load the API key from an environment variable, never hard-coded.
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>- Add a short README explaining, for a beginner, how the message list and
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  streaming work.
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Keep it to a single, well-commented Python file plus the README.
+</span></code></pre></div>
+<p><strong>What it teaches:</strong> messages/roles, conversation memory, streaming, API keys — the whole Stage 0 loop in one artifact.</p>
+<h3 id="project-2-structured-extractor">Project 2 — Structured Extractor<a class="headerlink" href="#project-2-structured-extractor" title="Permanent link">&para;</a></h3>
+<p>Feed in messy text (a review, an email) and get back clean JSON: sentiment, key points, action items. Teaches prompting for <em>reliable structure</em> and low temperature.</p>
+<h3 id="project-3-prompt-playground">Project 3 — Prompt Playground<a class="headerlink" href="#project-3-prompt-playground" title="Permanent link">&para;</a></h3>
+<p>A tiny web UI (Streamlit or Gradio) where you tweak the system prompt and temperature and compare outputs side by side. Teaches how much prompt and settings actually change results.</p>
+<h2 id="youre-done-with-stage-0-when">You're done with Stage 0 when…<a class="headerlink" href="#youre-done-with-stage-0-when" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You have a working chatbot you built and understand line by line.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can explain why the model "remembers" only what you resend.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can force valid JSON output from a prompt.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You can explain how temperature changes an answer.</li>
+</ul>
+<h2 id="whats-next">What's next<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>You've got a model that's smart but knows nothing about <em>your</em> world. <strong>Stage 1 — RAG</strong> fixes that: you'll give the model your own documents and have it answer questions using them, with citations. That's where AI engineering starts to feel like a superpower.</p>
+<p><em>Part 2 of the AI Engineering Roadmap. Built in public — every concept ships with a project you can build yourself.</em></p>
 
 
 
