@@ -782,44 +782,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-it-your-first-three-projects" class="md-nav__link">
+  <a href="#build-it-the-stage-0-project" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Build it: your first three projects
+        Build it: the Stage 0 project
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Build it: your first three projects">
+    <nav class="md-nav" aria-label="Build it: the Stage 0 project">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#project-1-cli-chatbot-do-this-one" class="md-nav__link">
+  <a href="#cli-chatbot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project 1 — CLI Chatbot (do this one)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#project-2-structured-extractor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project 2 — Structured Extractor
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#project-3-prompt-playground" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project 3 — Prompt Playground
+        CLI Chatbot
       
     </span>
   </a>
@@ -828,6 +806,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-project-ideas-for-this-stage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other project ideas for this stage
+      
+    </span>
+  </a>
   
 </li>
       
@@ -946,30 +935,30 @@
 <li><strong>Ask for structure.</strong> Tell it to reply in JSON when you need machine-readable output.</li>
 <li><strong>Chain-of-thought.</strong> "Think step by step" improves reasoning on harder tasks.</li>
 </ul>
-<h2 id="build-it-your-first-three-projects">Build it: your first three projects<a class="headerlink" href="#build-it-your-first-three-projects" title="Permanent link">&para;</a></h2>
-<p>Learning sticks when you ship. Do at least the first one.</p>
-<h3 id="project-1-cli-chatbot-do-this-one">Project 1 — CLI Chatbot <em>(do this one)</em><a class="headerlink" href="#project-1-cli-chatbot-do-this-one" title="Permanent link">&para;</a></h3>
-<p>A terminal chatbot that holds a conversation, remembers context, and streams replies.</p>
-<p><strong>Hand this to Claude Code:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Build a command-line chatbot in Python that talks to an LLM API.
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Requirements:
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>- A loop that reads my input in the terminal and prints the model&#39;s reply.
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>- Maintain conversation history so the model remembers earlier turns
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  (send the full message list each request).
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>- Include a configurable system prompt at the top of the file.
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>- Stream the response so it prints token-by-token like a typing effect.
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>- Type &quot;exit&quot; to quit; type &quot;reset&quot; to clear the conversation history.
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>- Load the API key from an environment variable, never hard-coded.
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>- Add a short README explaining, for a beginner, how the message list and
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  streaming work.
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Keep it to a single, well-commented Python file plus the README.
-</span></code></pre></div>
+<h2 id="build-it-the-stage-0-project">Build it: the Stage 0 project<a class="headerlink" href="#build-it-the-stage-0-project" title="Permanent link">&para;</a></h2>
+<p>Learning sticks when you ship. The project for this stage is a CLI chatbot — build that one end to end.</p>
+<h3 id="cli-chatbot">CLI Chatbot<a class="headerlink" href="#cli-chatbot" title="Permanent link">&para;</a></h3>
+<p>A terminal chatbot that holds a conversation, remembers context, and streams replies. It should:</p>
+<ul>
+<li>Read your input in a loop and print the model's reply.</li>
+<li>Maintain conversation history so the model remembers earlier turns (send the full message list each request).</li>
+<li>Use a configurable system prompt and stream the response token-by-token.</li>
+<li>Support <code>exit</code> to quit and <code>reset</code> to clear history.</li>
+<li>Load the API key from an environment variable, never hard-coded.</li>
+</ul>
 <p><strong>What it teaches:</strong> messages/roles, conversation memory, streaming, API keys — the whole Stage 0 loop in one artifact.</p>
-<h3 id="project-2-structured-extractor">Project 2 — Structured Extractor<a class="headerlink" href="#project-2-structured-extractor" title="Permanent link">&para;</a></h3>
-<p>Feed in messy text (a review, an email) and get back clean JSON: sentiment, key points, action items. Teaches prompting for <em>reliable structure</em> and low temperature.</p>
-<h3 id="project-3-prompt-playground">Project 3 — Prompt Playground<a class="headerlink" href="#project-3-prompt-playground" title="Permanent link">&para;</a></h3>
-<p>A tiny web UI (Streamlit or Gradio) where you tweak the system prompt and temperature and compare outputs side by side. Teaches how much prompt and settings actually change results.</p>
+<div class="admonition success">
+<p class="admonition-title">See the finished project</p>
+<p>I built this one — <strong><a href="https://github.com/golamrasul97/cli-chatbot">golamrasul97/cli-chatbot on GitHub</a></strong>. Clone it, read the single commented file, and run it against your own Ollama or API key.</p>
+</div>
+<h2 id="other-project-ideas-for-this-stage">Other project ideas for this stage<a class="headerlink" href="#other-project-ideas-for-this-stage" title="Permanent link">&para;</a></h2>
+<p>Want to push further? Any of these reinforce the same fundamentals from a different angle:</p>
+<ul>
+<li><strong>Structured Extractor</strong> — feed in messy text (a review, an email) and get back clean JSON: sentiment, key points, action items. Teaches prompting for <em>reliable structure</em> and low temperature.</li>
+<li><strong>Prompt Playground</strong> — a tiny web UI (Streamlit or Gradio) where you tweak the system prompt and temperature and compare outputs side by side. Teaches how much prompt and settings actually change results.</li>
+<li><strong>Token &amp; cost counter</strong> — a small script that takes any prompt, reports the token count, and estimates the cost. Makes tokens and the context window concrete.</li>
+<li><strong>Persona switcher</strong> — one chatbot, several system prompts (tutor, code reviewer, translator) you swap at runtime. Drives home how much the system role shapes behavior.</li>
+</ul>
 <h2 id="youre-done-with-stage-0-when">You're done with Stage 0 when…<a class="headerlink" href="#youre-done-with-stage-0-when" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> You have a working chatbot you built and understand line by line.</li>
