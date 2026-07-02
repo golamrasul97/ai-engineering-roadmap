@@ -68,41 +68,33 @@ How you ask changes what you get. The core moves:
 - **Ask for structure.** Tell it to reply in JSON when you need machine-readable output.
 - **Chain-of-thought.** "Think step by step" improves reasoning on harder tasks.
 
-## Build it: your first three projects
+## Build it: the Stage 0 project
 
-Learning sticks when you ship. Do at least the first one.
+Learning sticks when you ship. The project for this stage is a CLI chatbot — build that one end to end.
 
-### Project 1 — CLI Chatbot *(do this one)*
+### CLI Chatbot
 
-A terminal chatbot that holds a conversation, remembers context, and streams replies.
+A terminal chatbot that holds a conversation, remembers context, and streams replies. It should:
 
-**Hand this to Claude Code:**
-
-```
-Build a command-line chatbot in Python that talks to an LLM API.
-
-Requirements:
-- A loop that reads my input in the terminal and prints the model's reply.
-- Maintain conversation history so the model remembers earlier turns
-  (send the full message list each request).
-- Include a configurable system prompt at the top of the file.
-- Stream the response so it prints token-by-token like a typing effect.
-- Type "exit" to quit; type "reset" to clear the conversation history.
+- Read your input in a loop and print the model's reply.
+- Maintain conversation history so the model remembers earlier turns (send the full message list each request).
+- Use a configurable system prompt and stream the response token-by-token.
+- Support `exit` to quit and `reset` to clear history.
 - Load the API key from an environment variable, never hard-coded.
-- Add a short README explaining, for a beginner, how the message list and
-  streaming work.
-Keep it to a single, well-commented Python file plus the README.
-```
 
 **What it teaches:** messages/roles, conversation memory, streaming, API keys — the whole Stage 0 loop in one artifact.
 
-### Project 2 — Structured Extractor
+!!! success "See the finished project"
+    I built this one — **[golamrasul97/cli-chatbot on GitHub](https://github.com/golamrasul97/cli-chatbot)**. Clone it, read the single commented file, and run it against your own Ollama or API key.
 
-Feed in messy text (a review, an email) and get back clean JSON: sentiment, key points, action items. Teaches prompting for *reliable structure* and low temperature.
+## Other project ideas for this stage
 
-### Project 3 — Prompt Playground
+Want to push further? Any of these reinforce the same fundamentals from a different angle:
 
-A tiny web UI (Streamlit or Gradio) where you tweak the system prompt and temperature and compare outputs side by side. Teaches how much prompt and settings actually change results.
+- **Structured Extractor** — feed in messy text (a review, an email) and get back clean JSON: sentiment, key points, action items. Teaches prompting for *reliable structure* and low temperature.
+- **Prompt Playground** — a tiny web UI (Streamlit or Gradio) where you tweak the system prompt and temperature and compare outputs side by side. Teaches how much prompt and settings actually change results.
+- **Token & cost counter** — a small script that takes any prompt, reports the token count, and estimates the cost. Makes tokens and the context window concrete.
+- **Persona switcher** — one chatbot, several system prompts (tutor, code reviewer, translator) you swap at runtime. Drives home how much the system role shapes behavior.
 
 ## You're done with Stage 0 when…
 
